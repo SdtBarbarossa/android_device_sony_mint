@@ -3,6 +3,9 @@ on boot
     chown system system /sys/devices/i2c-12/12-0049/intensity
     chmod 666 /sys/devices/i2c-12/12-0049/intensity
 
+    # Set vibrator intensity 100%
+    write /sys/devices/i2c-12/12-0049/intensity 5
+
     # LED fix
     chown system system /sys/class/leds/pwr-red/use_pattern
     chmod 664 /sys/class/leds/pwr-red/use_pattern
